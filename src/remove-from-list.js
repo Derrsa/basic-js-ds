@@ -22,35 +22,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  *   }
  * }
  */
-class ListNode {
-  constructor(x) {
-    this.value = x;
-    this.next = null;
-  }
-}
-
-function removeElements(head, k) {
-  // Handle cases where the list is empty
-  if (!head) {
-    return null;
-  }
-
-  // Create a dummy node to simplify the removal process
-  const dummy = new ListNode(0);
-  dummy.next = head;
-
-  let current = dummy;
-
-  // Iterate through the list and remove nodes with value k
-  while (current.next) {
-    if (current.next.value === k) {
-      current.next = current.next.next;
-    } else {
-      current = current.next;
-    }
-  }
-
-  return dummy.next;
+function removeKFromList(/* l, k */) {
+  throw new NotImplementedError('Not implemented');
+  // remove line with error and write your code here
 }
 
 module.exports = {
